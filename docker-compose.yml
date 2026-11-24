@@ -1,0 +1,8 @@
+services:
+  workflow:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    security_opt:
+      - no-new-privileges:true
